@@ -1,0 +1,11 @@
+<h2>
+  COMPONENT 1 :
+  Enter text from component one :
+</h2>
+
+<input #Comp1 type="text">
+<button (click)="onClick(Comp1.value)">Click</button>
+
+
+<app-component2 [parentData]="myInput">
+  </app-component2>
